@@ -1,4 +1,4 @@
-/** CSS STYLE **/
+/* * CSS STYLE * */
 /* @font-face {
   font-family: 'Open Sans', sans-serif;
   src: url();
@@ -26,6 +26,7 @@ body {
     font-size: 16px;
     line-height: 1.6em;
     color: #2a2626;
+    width: 1440px;
 }
 h1,
 h2,
@@ -49,4 +50,53 @@ main {
     max-width: 1110px;
     align-content: center;
     margin: 100px;
+}
+.background {
+    /* position: relative; */
+    background-color: var(--light);
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/background.png");
+    opacity: 0.9;
+    z-index: 300;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 1440px;
+    position: absolute;
+}
+
+/* header::before {
+    position: absolute;
+    z-index: 300;
+    width: 1440px;
+    background-image: url("../images/background.png");
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+} */
+
+.title {
+    position: absolute;
+    z-index: 200;
+    top: 100px;
+    left: 165px;
+    color: var(--base-light);
+}
+.dark {
+    color: var(--dark);
+}
+
+.right {
+    position: absolute;
+    z-index: 100;
+    top: 55px;
+    right: -270px;
+    height: 525px;
 }
