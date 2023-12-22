@@ -1,8 +1,5 @@
 /* * CSS STYLE * */
-/* @font-face {
-  font-family: 'Open Sans', sans-serif;
-  src: url();
-} */
+
 :root {
     --white: #fff;
     --white-transparent: #d7ccc0;
@@ -28,6 +25,7 @@ h2,
 h3 {
     font-family: "Neucha", cursive;
     line-height: 1.2em;
+    font-weight: 400;
 }
 
 h1 {
@@ -45,6 +43,8 @@ h3 {
 .background {
     position: relative;
     background-color: var(--light);
+    width: 1440px;
+    height: 919px;
 }
 
 .background::before {
@@ -61,7 +61,15 @@ h3 {
 
 .container {
     max-width: 1110px;
+
     margin: 100px auto;
+}
+.pos-relative {
+    position: relative;
+}
+
+.mg-top-0 {
+    margin-top: 0;
 }
 
 .title {
@@ -77,6 +85,10 @@ h3 {
     padding: 0;
 }
 
+.center {
+    text-align: center;
+}
+
 .right {
     position: absolute;
     z-index: 100;
@@ -86,9 +98,12 @@ h3 {
     column-span: all;
 }
 
+.col-span-all {
+    column-span: all;
+}
 .columns-2 {
     column-count: 2;
-    column-gap: 30px
+    column-gap: 30px;
 }
 
 button {
@@ -99,3 +114,125 @@ button {
     color: var(--white);
     background-color: var(--base-light);
 }
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+.video {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    position: relative;
+    top: 200px;
+}
+.rectangle-37 {
+    width: 1440px;
+    height: 100px;
+    background-color: var(--base-dark);
+}
+.card {
+    display: block;
+    max-width: 302px;
+    flex-wrap: wrap;
+    padding: 24px;
+    /* max-width: 302px; */
+    background-color: var(--light);
+}
+.number {
+    margin-bottom: 40px;
+    font-size: 64px;
+    font-family: "Neucha", cursive;
+    line-height: 1;
+}
+
+.card-h {
+    /* font-size: 52px; */
+    color: var(--base-light);
+}
+.padding-0 {
+    /* display: block; */
+    padding: 0;
+    max-width: 350px;
+    font-size: 46px;
+    font-weight: 400;
+    font-family: "Neucha", cursive;
+    line-height: 1;
+    background-color: var(--light);
+}
+
+.nav-h {
+    font-size: 40px;
+    font-weight: 400;
+    /* line-height: 62.4px; */
+}
+
+.navigation {
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: var(--base-dark); */
+}
+
+.col-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.mg-top-100 {
+    margin-top: 100px;
+}
+.nav-background {
+    background-color: var(--base-dark);
+    height: 891px;
+    /* margin-top: 100px; */
+}
+
+.p-34 {
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block {
+    max-width: 502px;
+}
+
+.bg-color-brown {
+    background-color: var(--brown);
+}
+
+.bg-color-white {
+    background-color: var(--white);
+}
+
+.color-white {
+    color: var(--white);
+}
+
+.color-brown {
+    color: var(--brown);
+}
+
+.not-h {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+/* section {
+    padding-top: 100px;
+} */
